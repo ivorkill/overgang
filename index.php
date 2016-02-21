@@ -3,6 +3,7 @@
 include 'views/head.php';
 include 'views/header.php';
 $page = (empty($_GET['page'])) ? '' : $_GET['page'];
+$song_id = (empty($_GET['song_id'])) ? '' : $_GET['song_id'];
 switch ($page) {
 	//Home page
 	case 'home':
@@ -15,6 +16,13 @@ switch ($page) {
 		require_once 'models/get_songs.php';
 		//Views
 		include 'views/songs.php';
+		break;
+	//Song details
+	case 'song_detail':
+		//Model
+		require_once 'models/song_detail.php';
+		//Views
+		include 'views/song_detail.php';
 		break;
 	//About page
 	case 'about':
