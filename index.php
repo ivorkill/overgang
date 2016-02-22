@@ -38,6 +38,10 @@ switch ($page) {
 		include 'views/home.php';
 		break;
 }
+//Model voor de aside
+require 'models/get_songs.php';
+//Aside
+include 'views/aside.php';
 //Footer
 include 'views/footer.php';
 ?>

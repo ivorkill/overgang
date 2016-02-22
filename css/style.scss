@@ -45,3 +45,19 @@ footer{
     	margin-top: 1.5em;
     }
 }
+#songs{
+	display: inline-block;
+	a{
+		text-decoration: none;
+		color: $white;
+	}
+}
+#aside{
+	display: block;
+	float: right;
+	width: 30%;
+	background-color: $white;
+	a{
+		text-decoration: none;
+	}
+}

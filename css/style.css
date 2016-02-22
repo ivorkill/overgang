@@ -35,4 +35,18 @@ footer {
   footer p {
     margin-top: 1.5em; }
 
+#songs {
+  display: inline-block; }
+  #songs a {
+    text-decoration: none;
+    color: white; }
+
+#aside {
+  display: block;
+  float: right;
+  width: 30%;
+  background-color: white; }
+  #aside a {
+    text-decoration: none; }
+
 /*# sourceMappingURL=style.css.map */
