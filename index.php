@@ -23,7 +23,7 @@ switch ($page) {
 		//Krijg het pagina nummer
 		$page_nr = isset($_GET['page_nr']) ? $_GET['page_nr'] : 1;
 		//Model
-		require_once 'models/get_songs.php';
+		require_once 'models/select_song_album.php';
 		//Pagination
 		include 'views/pagination.php';
 		//Views

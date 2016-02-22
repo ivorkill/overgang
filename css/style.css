@@ -55,6 +55,8 @@ footer {
   #songs a {
     text-decoration: none;
     color: white; }
+  #songs p {
+    color: white; }
 
 #song_detail {
   width: 60%;

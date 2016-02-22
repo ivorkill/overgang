@@ -6,11 +6,11 @@
 	//Maak een array aan
 	$list = array();
 	//Get song query en welke liedjes er moeten worden opgehaald
-	$sql = "SELECT * FROM songs LIMIT ".$start_item.",". $items_per_page;
-    $result = $mysqli->query($sql);
+	$sql = "SELECT * FROM songs INNER JOIN albums ON songs.album_id=albums.id JOIN artists ON songs.artist_id=artists.id LIMIT ".$start_item.",". $items_per_page;
+	$result = $mysqli->query($sql);
     //Haal de resultaten op en plaats ze in een array
-    while ($songs = $result->fetch_assoc()){
-    	$list[] = $songs;
+    while ($songsAlbum = $result->fetch_assoc()){
+    	$list[] = $songsAlbum;
     }
     //Geef de rijen terug
     return $list;
