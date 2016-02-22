@@ -6,11 +6,12 @@ require 'config/dbconnect.php';
 include 'views/head.php';
 include 'views/header.php';
 //Model voor de aside
-require 'models/get_songs.php';
+require 'models/aside_songs.php';
 //Aside
 include 'views/aside.php';
 $page = (empty($_GET['page'])) ? '' : $_GET['page'];
 $song_id = (empty($_GET['song_id'])) ? '' : $_GET['song_id'];
+
 switch ($page) {
 	//Home page
 	case 'home':
@@ -19,8 +20,12 @@ switch ($page) {
 		break;
 	//Song page
 	case 'songs':
+		//Krijg het pagina nummer
+		$page_nr = isset($_GET['page_nr']) ? $_GET['page_nr'] : 1;
 		//Model
 		require_once 'models/get_songs.php';
+		//Pagination
+		include 'views/pagination.php';
 		//Views
 		include 'views/songs.php';
 		break;

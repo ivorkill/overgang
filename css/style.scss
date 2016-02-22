@@ -109,3 +109,11 @@ footer{
 		color: $black;
 	}
 }
+#pagination{
+	display: block;
+	text-align: center;
+	a{
+		text-decoration: none;
+		color: $white;
+	}
+}

@@ -86,4 +86,11 @@ footer {
     text-decoration: none;
     color: black; }
 
+#pagination {
+  display: block;
+  text-align: center; }
+  #pagination a {
+    text-decoration: none;
+    color: white; }
+
 /*# sourceMappingURL=style.css.map */
