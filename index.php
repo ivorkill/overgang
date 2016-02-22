@@ -5,6 +5,10 @@ require 'config/dbconnect.php';
 //Header & Navigation
 include 'views/head.php';
 include 'views/header.php';
+//Model voor de aside
+require 'models/get_songs.php';
+//Aside
+include 'views/aside.php';
 $page = (empty($_GET['page'])) ? '' : $_GET['page'];
 $song_id = (empty($_GET['song_id'])) ? '' : $_GET['song_id'];
 switch ($page) {
@@ -38,10 +42,6 @@ switch ($page) {
 		include 'views/home.php';
 		break;
 }
-//Model voor de aside
-require 'models/get_songs.php';
-//Aside
-include 'views/aside.php';
 //Footer
 include 'views/footer.php';
 ?>

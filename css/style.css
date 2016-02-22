@@ -3,6 +3,7 @@
   padding: 0 auto; }
 
 html {
+  overflow-x: hidden;
   font-family: 'Open Sans Condensed', sans-serif; }
 
 body {
@@ -20,12 +21,25 @@ header {
     display: block;
     float: left;
     padding: .5em;
+    padding-left: 2em;
     margin-left: 6em;
-    margin-top: 2em; }
+    margin-top: 1em; }
     header #nav li a {
+      padding: 1em;
       display: inline-block;
       text-decoration: none;
       color: white; }
+    header #nav li :hover {
+      background-color: #0300d3;
+      -webkit-transition: .7s;
+      -moz-transition: .7s;
+      -o-transition: .7s;
+      transition: .7s; }
+  header #search {
+    display: inline-block;
+    float: right;
+    margin-top: 2em;
+    margin-right: 6em; }
 
 footer {
   background-color: #00d6c7;
@@ -33,6 +47,7 @@ footer {
   width: 100%;
   height: 5em; }
   footer p {
+    text-align: center;
     margin-top: 1.5em; }
 
 #songs {
@@ -41,12 +56,34 @@ footer {
     text-decoration: none;
     color: white; }
 
+#song_detail {
+  width: 60%;
+  height: 100%;
+  margin-left: 10%; }
+  #song_detail #left_song a {
+    margin-top: -1.5em;
+    text-decoration: none;
+    color: white;
+    float: left; }
+  #song_detail #right_song a {
+    margin-top: -1.5em;
+    text-decoration: none;
+    color: white;
+    float: right; }
+  #song_detail #main_song p {
+    margin-top: 4.5em;
+    color: white;
+    text-align: center; }
+
 #aside {
   display: block;
   float: right;
-  width: 30%;
+  width: 20%;
+  padding-bottom: 20%;
+  height: 100%;
   background-color: white; }
   #aside a {
-    text-decoration: none; }
+    text-decoration: none;
+    color: black; }
 
 /*# sourceMappingURL=style.css.map */
