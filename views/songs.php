@@ -1,10 +1,10 @@
 <div id="songs">
 	<?php
-		foreach ($songs as $songList) {
-			$songs_id = $songsList['id'];
-        	$songs_title = $songsList['songs_title'];
-        	echo "<h2>$news_title</h2>";
-	        echo "<a href='?url=songs&id=$songs_id'>Lees meer...</a>";
-		}
+	foreach ($list as $songList){
+		$song_title = $songList['title'];
+		$song_id = $songList['id'];
+		echo $song_id.' '.$song_title;
+	    echo "<a href='?url=song_detail&song_id=$song_id'>Lees meer...</a>";
+	}  	
 	?>
 </div>

@@ -1,4 +1,7 @@
 <?php
+//Make db connectie
+require 'config/config.php';
+require 'config/dbconnect.php';
 //Header & Navigation
 include 'views/head.php';
 include 'views/header.php';
@@ -22,7 +25,7 @@ switch ($page) {
 		//Model
 		require_once 'models/song_detail.php';
 		//Views
-		include 'views/song_detail.php';
+		include 'views/song_detail_page.php';
 		break;
 	//About page
 	case 'about':
