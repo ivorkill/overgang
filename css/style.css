@@ -40,6 +40,15 @@ header {
     float: right;
     margin-top: 2em;
     margin-right: 6em; }
+    header #search table {
+      width: 100%;
+      border-collapse: collapse;
+      z-index: -1; }
+      header #search table td, header #search table th {
+        border: 1px solid black;
+        padding: 5px; }
+        header #search table td th, header #search table th th {
+          text-align: left; }
 
 footer {
   background-color: #00d6c7;
