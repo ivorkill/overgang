@@ -1,4 +1,5 @@
 <?php
+//Maak db connectie
 require 'config/config.php';
 require 'config/dbconnect.php';
 //Head
@@ -19,10 +20,8 @@ switch ($page) {
 		break;
 	//Song page
 	case 'songs':
-		//Krijg het pagina nummer
-		$page_nr = isset($_GET['page_nr']) ? $_GET['page_nr'] : 1;
 		//Model
-		require_once 'models/select_song.php';
+		require 'models/select_song.php';
 		//Views
 		include 'views/songs.php';
 		//Pagination
@@ -31,13 +30,7 @@ switch ($page) {
 	//Song details
 	case 'song_detail':
 		//Model
-		require_once 'models/song_detail.php';
-		// //Vars
-		// $song_id = $songList['id'];
-		// $song_title = $songList['song_title'];
-		// $album_title = $songList['album_title'];
-		// $artist_name = $songList['artist_name'];
-		// $audio = $songList['audio'];
+		require 'models/song_detail.php';
 		//Views
 		include 'views/song_detail_page.php';
 		break;

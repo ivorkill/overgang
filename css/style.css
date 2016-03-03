@@ -60,7 +60,9 @@ footer {
     margin-top: 1.5em; }
 
 #songs {
-  display: inline-block; }
+  display: inline-block;
+  margin-left: 5%;
+  margin-top: 3%; }
   #songs a {
     text-decoration: none;
     color: white; }
@@ -70,26 +72,39 @@ footer {
 #song_detail {
   width: 60%;
   height: 100%;
-  margin-left: 10%; }
+  margin-left: 10%;
+  margin-top: 5em; }
   #song_detail #left_song a {
-    margin-top: -1.5em;
+    margin-top: -2em;
     text-decoration: none;
     color: white;
     float: left; }
   #song_detail #right_song a {
-    margin-top: -1.5em;
+    margin-top: -2em;
     text-decoration: none;
     color: white;
     float: right; }
-  #song_detail #main_song p {
-    margin-top: 4.5em;
+  #song_detail #main_song {
     color: white;
-    text-align: center; }
+    margin-top: 2em; }
+    #song_detail #main_song h3 {
+      margin-top: -.5em;
+      color: white;
+      text-align: center; }
+    #song_detail #main_song p {
+      margin-top: .7em;
+      margin-left: 40%; }
+    #song_detail #main_song audio {
+      margin-top: 2.5em;
+      margin-left: 35%; }
+    #song_detail #main_song img {
+      margin-left: 37%;
+      width: 17em; }
 
 #aside {
   display: block;
   float: right;
-  width: 20%;
+  width: 23%;
   padding-bottom: 20%;
   height: 100%;
   background-color: white; }

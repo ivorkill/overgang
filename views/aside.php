@@ -5,8 +5,8 @@
 			$song_title = $list[$j]['song_title'];
 			$song_id = $list[$j]['id'];
 			$song_artist = $list[$j]['artist_name'];
-			echo "<a href='?action=song_detail&id=$song_id'>".$song_title." - ".$song_artist."</a><br>";
-		    echo "<a href='?action=song_detail&id=$song_id'>Lees meer...</a><br><br>";	
+			echo "<a href='?page=song_detail&song_id=$song_id'>".$song_title." - ".$song_artist."</a><br>";
+		    echo "<a href='?page=song_detail&song_id=$song_id'>Lees meer...</a><br><br>";	
 		}
 	?>
 </div>
