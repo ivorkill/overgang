@@ -7,7 +7,7 @@ html {
   font-family: 'Open Sans Condensed', sans-serif; }
 
 body {
-  background-color: #05647a; }
+  background-color: #605e5e; }
 
 header {
   width: 100%;
@@ -17,106 +17,129 @@ header {
   height: 5em;
   margin-left: -10px;
   margin-top: -10px; }
-  header #nav li {
-    display: block;
-    float: left;
-    padding: .5em;
-    padding-left: 2em;
-    margin-left: 6em;
-    margin-top: 1em; }
-    header #nav li a {
-      padding: 1em;
-      display: inline-block;
-      text-decoration: none;
-      color: white; }
-    header #nav li :hover {
-      background-color: #0300d3;
-      -webkit-transition: .7s;
-      -moz-transition: .7s;
-      -o-transition: .7s;
-      transition: .7s; }
-  header #search {
-    display: inline-block;
-    float: right;
-    margin-top: 2em;
-    margin-right: 6em; }
-    header #search table {
-      width: 100%;
-      border-collapse: collapse;
-      z-index: -1; }
-      header #search table td, header #search table th {
-        border: 1px solid black;
-        padding: 5px; }
-        header #search table td th, header #search table th th {
-          text-align: left; }
+  header #nav {
+    margin-top: .5em; }
+    header #nav li {
+      display: block;
+      float: left;
+      padding: .5em;
+      padding-left: 2em;
+      margin-left: 6em;
+      margin-top: -1em; }
+      header #nav li a {
+        padding: 1em;
+        display: inline-block;
+        text-decoration: none;
+        color: white; }
+      header #nav li :hover {
+        background-color: #0300d3;
+        -webkit-transition: .7s;
+        -moz-transition: .7s;
+        -o-transition: .7s;
+        transition: .7s; }
+    header #nav #search {
+      margin-top: 1.5em; }
+      header #nav #search form {
+        width: 12em;
+        float: right;
+        margin-right: 35em; }
+        header #nav #search form #txtHint {
+          margin-top: -1.5em;
+          background-color: black; }
+          header #nav #search form #txtHint a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin-top: 1.5em; }
+          header #nav #search form #txtHint p {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin-top: 1.5em; }
 
 footer {
   background-color: #00d6c7;
   overflow: hidden;
   width: 100%;
-  height: 5em; }
+  height: 5em;
+  bottom: 0;
+  position: absolute; }
   footer p {
     text-align: center;
     margin-top: 1.5em; }
 
-#songs {
-  display: inline-block;
-  margin-left: 5%;
-  margin-top: 3%; }
-  #songs a {
-    text-decoration: none;
-    color: white; }
-  #songs p {
-    color: white; }
-
-#song_detail {
-  width: 60%;
+#wrapper {
+  width: 80%;
   height: 100%;
-  margin-left: 10%;
-  margin-top: 5em; }
-  #song_detail #left_song a {
-    margin-top: -2em;
-    text-decoration: none;
-    color: white;
-    float: left; }
-  #song_detail #right_song a {
-    margin-top: -2em;
-    text-decoration: none;
-    color: white;
-    float: right; }
-  #song_detail #main_song {
-    color: white;
-    margin-top: 2em; }
-    #song_detail #main_song h3 {
-      margin-top: -.5em;
+  background-color: #05647a;
+  margin-bottom: -5em; }
+  #wrapper #songs {
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: 3%;
+    margin-bottom: 10%; }
+    #wrapper #songs a {
+      text-decoration: none;
+      color: white; }
+    #wrapper #songs p {
+      color: white; }
+    #wrapper #songs h2 {
+      color: white; }
+  #wrapper #song_detail {
+    display: inline-block;
+    width: 60%;
+    height: 100%;
+    margin-left: 15em;
+    margin-top: 3%;
+    margin-bottom: 15%; }
+    #wrapper #song_detail #left_song a {
+      margin-left: -10em;
+      margin-top: .5em;
+      text-decoration: none;
       color: white;
-      text-align: center; }
-    #song_detail #main_song p {
-      margin-top: .7em;
-      margin-left: 40%; }
-    #song_detail #main_song audio {
-      margin-top: 2.5em;
-      margin-left: 35%; }
-    #song_detail #main_song img {
-      margin-left: 37%;
-      width: 17em; }
-
-#aside {
-  display: block;
-  float: right;
-  width: 23%;
-  padding-bottom: 20%;
-  height: 100%;
-  background-color: white; }
-  #aside a {
-    text-decoration: none;
-    color: black; }
-
-#pagination {
-  display: block;
-  text-align: center; }
-  #pagination a {
-    text-decoration: none;
+      float: left; }
+    #wrapper #song_detail #right_song a {
+      margin-right: -14em;
+      margin-top: .5em;
+      text-decoration: none;
+      color: white;
+      float: right; }
+    #wrapper #song_detail #main_song {
+      color: white;
+      margin-top: 2em; }
+      #wrapper #song_detail #main_song h3 {
+        margin-top: -.5em;
+        color: white;
+        text-align: center; }
+      #wrapper #song_detail #main_song p {
+        margin-top: .7em;
+        margin-left: 37%; }
+      #wrapper #song_detail #main_song audio {
+        margin-top: 2.5em;
+        margin-left: 35%; }
+      #wrapper #song_detail #main_song img {
+        margin-left: 35%;
+        width: 17em; }
+  #wrapper #pagination {
+    display: block;
+    text-align: center;
+    margin-top: -1%;
+    margin-bottom: 7%; }
+    #wrapper #pagination a {
+      text-decoration: none;
+      color: white;
+      padding-bottom: 3em; }
+  #wrapper #featured {
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: 3%;
+    margin-bottom: 30%; }
+    #wrapper #featured a {
+      color: white;
+      text-decoration: none; }
+    #wrapper #featured h3 {
+      color: white; }
+  #wrapper #home h3 {
     color: white; }
 
 /*# sourceMappingURL=style.css.map */

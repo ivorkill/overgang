@@ -1,4 +1,5 @@
 <div id="aside">
+	<h2>Featured:</h2><br>
 	<?php
 		for ($i=0; $i < 3; $i++) { 
 			$j = mt_rand(0,5);

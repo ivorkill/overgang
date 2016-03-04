@@ -1,4 +1,5 @@
 <div id="songs">
+	<h2>Alle songs</h2><br>
 	<?php
 	foreach ($list as $songList){
 		$song_id = $songList['id'];
@@ -6,8 +7,9 @@
 		$album_title = $songList['album_title'];
 		$artist_name = $songList['artist_name'];
 		$audio = $songList['audio'];
-		echo "<p><a href='?page=song_detail&song_id=".$song_id."'>".$song_title." - ".$artist_name." ".$album_title."</a></p>";
-	    echo "<a href='?page=song_detail&song_id=".$song_id."'>Lees meer...</a><br>";
+		echo "<p>".$song_title." - ".$artist_name."</p>";
+		echo "<p>Album: ".$album_title."</p>";
+	    echo "<a href='?page=song_detail&song_id=".$song_id."'>Lees meer...</a><br><br>";
 	}	
 	?>
 </div>

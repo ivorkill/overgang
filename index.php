@@ -6,10 +6,6 @@ require 'config/dbconnect.php';
 include "views/head.php";
 //Header
 include "views/header.php";
-//Model voor de aside
-require 'models/aside_songs.php';
-//Aside
-include 'views/aside.php';
 $page = (empty($_GET['page'])) ? '' : $_GET['page'];
 $song_id = (empty($_GET['song_id'])) ? '' : $_GET['song_id'];
 switch ($page) {
@@ -19,14 +15,14 @@ switch ($page) {
 		include 'views/home.php';
 		break;
 	//Song page
-	case 'songs':
+	case 'songs':		
 		//Model
 		require 'models/select_song.php';
 		//Views
 		include 'views/songs.php';
 		//Pagination
 		include 'views/pagination.php';
-		break;
+	break;	
 	//Song details
 	case 'song_detail':
 		//Model
@@ -39,16 +35,18 @@ switch ($page) {
 		//Views
 		include 'views/about.php';
 		break;
-	case 'search':
-		include 'views/search.html';
-		break;
+	//Featured page
+	case 'featured':
+		//Model
+		require 'models/featured_songs.php';
+		//Views
+		include 'views/featured.php';
 	//Default
 	default:
 		//Views
 		include 'views/home.php';
 		break;
 }
-
 //Footer
 include 'views/footer.php';
 ?>

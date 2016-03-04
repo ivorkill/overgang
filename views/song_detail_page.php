@@ -12,10 +12,10 @@
 		$album_img = $songList['album_image'];
 		echo "<div id='main_song'><h3>".$artist_name.' - '.$song_title."</h3><br>";
 		echo "<p>Album: $album_title</p>";
-		echo "<img src='".$album_img."'>";
+		echo "<img src='image/".$album_img."'>";
 		echo "<p>Genre: $genre</p>";
 		echo "<audio controls>";
-			echo "<source src='".$audio."' type='audio/mp3'>";
+			echo "<source src='audio/".$audio."' type='audio/mp3'>";
 		echo "</audio></div>";
 	}
 	?>		
