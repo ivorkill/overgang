@@ -41,6 +41,7 @@ switch ($page) {
 		require 'models/featured_songs.php';
 		//Views
 		include 'views/featured.php';
+		break;
 	//Default
 	default:
 		//Views

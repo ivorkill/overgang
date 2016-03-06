@@ -9,8 +9,6 @@
     };
     //Berekent waar hij moet beginnen
     $start_from = ($page-1) * $num_rec_per_page; 
-	//Maak een array aan
-	$list = array();
 	//Get song query en welke liedjes er moeten worden opgehaald
 	$sql = "SELECT * FROM songs INNER JOIN albums ON songs.album_id=albums.id JOIN artists ON songs.artist_id=artists.id LIMIT ".$start_from.",". $num_rec_per_page;
 	$result = $mysqli->query($sql);

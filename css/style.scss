@@ -4,6 +4,7 @@ $black: rgb(0,0,0);
 $header-color: #00d6c7;
 $footer_color: #00d6c7;
 $wrapper_color: rgb(5,100,122);
+$hoover: #0300d3;
 *{
 	margin: 0 auto;
 	padding: 0 auto;
@@ -17,7 +18,7 @@ body{
 }
 header{
 	width: 100%;
-	color: white;
+	color: $black;
 	background-color: $header-color;
 	padding: 1.5em;
 	height: 5em;
@@ -36,10 +37,11 @@ header{
 				padding: 1em;
 				display: inline-block;
 				text-decoration: none;
-				color: $white;
+				color: $black;
 			}
 			:hover{
-				background-color: #0300d3;
+				background-color: $hoover;
+				color: $white;
 				-webkit-transition: .7s;
 			    -moz-transition: .7s;
 			    -o-transition: .7s;
@@ -52,17 +54,21 @@ header{
 				width: 12em;
 				float: right;
 				margin-right: 35em;
+				input{
+					width: 14.1em;
+				}
 				#txtHint{
-					margin-top: -1.5em;
-					background-color: $black;
+					margin-top: -1.25em;
+					background-color: $white;
+					border: solid 1px $black;
 					a{
-						color: $white;
+						color: $black;
 						text-decoration: none;
 						display: block;
 						margin-top: 1.5em;
 					}
 					p{
-						color: $white;
+						color: $black;
 						text-decoration: none;
 						display: block;
 						margin-top: 1.5em;
@@ -94,15 +100,10 @@ footer{
 		margin-left: 5%;
 		margin-top: 3%;
 		margin-bottom: 10%;
+		color: $white;
 		a{
 			text-decoration: none;
-			color: $white;
-		}
-		p{
-			color: $white;
-		}
-		h2{
-			color: $white;
+			color: $white;		
 		}
 	}
 	#song_detail{
@@ -177,8 +178,35 @@ footer{
 		}
 	}
 	#home{
-		h3{
+		display: inline-block;
+		margin-left: 45%;
+		margin-top: 20%;
+		margin-bottom: 30%;
+		h1{
 			color: $white;
+			display: block;
+		}
+	}
+	#about{
+		display: inline-block;
+		margin-left: 5%;
+		margin-top: 3%;
+		margin-bottom: 8%;
+		color: $white;
+		img{
+			width: 20em;
+			display: block;
+			float: left;
+		}
+		h3{
+			float: left;
+			margin-left: 2em;
+		}
+		p{
+			left: 34.5%;
+		    position: absolute;
+		    width: 55%;
+			margin-top: 4em;
 		}
 	}
 }

@@ -1,3 +1,3 @@
 <div id="home">
-	<h3>Home</h3>
+	<h1>Home</h1>
 </div>

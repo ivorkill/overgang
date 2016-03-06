@@ -18,7 +18,7 @@ if (!$con) {
 mysqli_select_db($con,"overgang");
 
 //enkele wildcard
-$sql = "SELECT * FROM songs JOIN artists ON songs.artist_id = artists.id  JOIN albums ON songs.album_id = albums.id WHERE song_title COLLATE UTF8_GENERAL_CI LIKE '$search%' LIMIT 5";
+$sql = "SELECT * FROM albums JOIN artists ON albums.artist_id = artists.id  JOIN songs ON songs.album_id = albums.id WHERE song_title COLLATE UTF8_GENERAL_CI LIKE '$search%' LIMIT 5";
 if ($type == "list"){
     $result = mysqli_query($con,$sql);
     while($row = mysqli_fetch_array($result)) {
